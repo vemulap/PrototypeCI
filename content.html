@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Content Ingestion</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/offcanvas.css" rel="stylesheet">
+    <link href="css/datatable.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+
+  <!--Google web font API-->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin" rel="stylesheet" type="text/css"/>
+
+  </head>
+
+  <body class="custom-font">
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">-->
+            <!--<span class="sr-only">Toggle navigation</span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+          <!--</button>-->
+          <a class="logo" href="#"></a></div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#content">Content Providers</a></li>
+            <li class="active"><a href="#about">Data</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-lg-8">
+          <!--<p class="pull-right visible-xs">-->
+            <!--&lt;!&ndash;<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>&ndash;&gt;-->
+          <!--</p>-->
+          <div class="header-wrap">
+            <h1>Reporting Summary Page</h1>
+          </div>
+
+
+          <div class="row">
+
+
+
+
+
+          <!--<div id="demo" class="custom-data-table"></div>-->
+            <table id="example" class="display" cellspacing="0" width="100%">
+              <thead>
+              <tr>
+                <th></th>
+                <th>Provider Name</th>
+                <th>File Name</th>
+                <th>Ingested Date</th>
+                <th>Status Process</th>
+                <th>File Path</th>
+              </tr>
+              </thead>
+
+              <!--<tfoot>-->
+              <!--<tr>-->
+                <!--<th></th>-->
+                <!--<th>First name</th>-->
+                <!--<th>Last name</th>-->
+                <!--<th>Position</th>-->
+                <!--<th>Office</th>-->
+              <!--</tr>-->
+              <!--</tfoot>-->
+            </table>
+
+
+
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+
+
+
+
+        <div class="col-lg-4 sidebar-offcanvas custom-search" id="sidebar" role="navigation">
+            <h3 class="margin-btm-20">Filter/ Search</h3>
+
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Search</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" id="inputSearch" placeholder="Search">
+              </div>
+            </div>
+            <div class="form-group">
+
+              <label for="" class="col-sm-2 control-label">Date</label>
+
+              <div class="col-xs-8">
+                <div class="input-group date">
+                  <input type="text" class="form-control"><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+            <label for="" class="col-sm-2 control-label">Provider</label>
+            <div class="col-xs-8">
+                <select class="form-control">
+                  <option>Select</option>
+                  <option>Super Duper Content Co.</option>
+                  <option>Kwikee</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="" class="col-sm-2 control-label">Status</label>
+              <div class="col-xs-8">
+                <select class="form-control">
+                  <option>Select</option>
+                  <option>In Progress</option>
+                  <option>Completed</option>
+                  <option>Completed with Error</option>
+                </select>
+              </div>
+            </div>
+      </form>
+
+
+
+
+
+
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Jade Gates Content Ingestion 2014</p>
+      </footer>
+
+    </div><!--/.container-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/vendor/bootstrap-datepicker.js"></script>
+    <script src="js/vendor/jquery.dataTables.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

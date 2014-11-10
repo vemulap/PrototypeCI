@@ -1,0 +1,96 @@
+.custom-font{ font-family: "Open Sans","open-sans",Arial,"Helvetica Neue",sans-serif; }
+
+
+
+/*Navigation*/
+.navbar-inverse {
+    background: #007dc6;
+    border-color: #007dc6;
+}
+
+.navbar-inverse .navbar-nav>li>a { color: #fff; }
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus { background-color: #79b9e7;}
+
+
+.logo {
+    background-image: url('../img/walmartlogo.png');
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    zoom: 1;
+    width: 164px;
+    height: 41px;
+    vertical-align: middle;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+.margin-btm-10 { margin-bottom: 10px; }
+.margin-btm-20 { margin-bottom: 20px; }
+
+.header-wrap{
+    background-color: #eee;
+    padding:10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #eee;
+}
+
+.header-wrap h1 {font-size: 30px; padding: 0; margin: 0;}
+
+.custom-search {
+    background: #eee;
+    border-radius: 6px;
+    margin-top:72px;
+    padding:10px 20px 20px;
+}
+.custom-search .col-xs-8 { margin-left: 21px; }
+.custom-search .form-group { margin-bottom: 36px; }
+
+/*Data tables*/
+td.details-control {
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #007dc6;
+    font-size: 12px;
+}
+td.details-control:before {
+    content: "\2b";
+}
+
+tr.details td.details-control {
+    background: url('') no-repeat center center;
+}
+
+.custom-data-table {
+    margin-top: 10px;
+    width: 700px;
+    margin-left: 35px;
+}
+.dataTables_wrapper { width: 750px; margin-left: 15px; }
+.dataTables_length, .dataTables_filter { display: none !important;}
+
+table.dataTable.row-border tbody th,
+table.dataTable.row-border tbody td,
+table.dataTable.display tbody th,
+table.dataTable.display tbody td
+{ border-top: none; }
+
+table.dataTable thead {  background: #eee; }
+
+table.dataTable thead tr th:first-child { border-top-left-radius: 6px; }
+table.dataTable thead tr th:last-child {  border-top-right-radius: 6px; }
+
+table.dataTable tfoot {  display: none; }
+
+.dataTables_info, .dataTables_paginate { margin-top: 40px; }
