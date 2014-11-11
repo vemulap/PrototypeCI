@@ -52,8 +52,8 @@ var dataSet = [
         "file_version" : "version1",
         "file_size" : '1GB',
         "no_records" : 4000,
-        "response" : 'Accepted',
-        "response_status" : 'Sent',
+        "response" : 'Failed',
+        "response_status" : 'Pending',
         "file_action" : 'TBD',
         "feed_status" : 'Inactive'
     },
@@ -68,7 +68,7 @@ var dataSet = [
         "file_size" : '1GB',
         "no_records" : 1000,
         "response" : 'Rejected',
-        "response_status" : 'Sent',
+        "response_status" : 'Failed',
         "file_action" : 'TBD',
         "feed_status" : 'Inactive'
 },
@@ -83,7 +83,7 @@ var dataSet = [
     "file_size" : '1GB',
     "no_records" : 400,
     "response" : 'Accepted',
-    "response_status" : 'Sent',
+    "response_status" : 'Acknowledged',
     "file_action" : 'TBD',
     "feed_status" : 'Inactive'
 },

@@ -31,17 +31,17 @@
 .margin-btm-20 { margin-bottom: 20px; }
 
 .header-wrap{
-    background-color: #eee;
+    background-color: #e0e0e0;
     padding:10px;
     border-radius: 6px;
     margin-bottom: 20px;
-    box-shadow: 0 0 5px #eee;
+    box-shadow: 0 0 5px #e0e0e0;
 }
 
 .header-wrap h1 {font-size: 30px; padding: 0; margin: 0;}
 
 .custom-search {
-    background: #eee;
+    background: #e0e0e0;
     border-radius: 6px;
     margin-top:72px;
     padding:10px 20px 20px;
@@ -86,7 +86,7 @@ table.dataTable.display tbody th,
 table.dataTable.display tbody td
 { border-top: none; }
 
-table.dataTable thead {  background: #eee; }
+table.dataTable thead {  background:  #e0e0e0; }
 
 table.dataTable thead tr th:first-child { border-top-left-radius: 6px; }
 table.dataTable thead tr th:last-child {  border-top-right-radius: 6px; }
