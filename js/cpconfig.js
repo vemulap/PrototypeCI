@@ -9,13 +9,19 @@ $( document ).ready(function() {
 
 
     var formData = {
+
+
         'cpName'                 : $('input[name=cpName]').val(),
         'feedFormat'             : $('.feed-format').val(),
         'superheroAlias'         : $('input[name=adapter]').val(),
-        'dataDestination'        : $('.data-destination').val()
-            };
 
-        alert(JSON.stringify(formData));
+
+        'dataDestination'        : $('.data-destination').val(),
+
+        'dataDestination' : { 'cpName' : $('input[name=cpName]').val() }
+    };
+
+        console.log(JSON.stringify(formData));
 
 
     });
