@@ -131,13 +131,14 @@ input.file {
 }
 /*cpconfigs*/
 .btn-create {
-    background-color: #f1f1f1;
+
     margin-left: 100px;
     margin-left: 161px;
     padding: 5px 30px;
     font-size: 20px;
-    color: #000;
+    color: #f7f7f7;
 }
+.btn-create:hover {color:#f7f7f7; }
+.form-group label:first-child { width: 150px; text-align: left;}
 
-
-
+.hide { display: none; }
