@@ -94,3 +94,50 @@ table.dataTable thead tr th:last-child {  border-top-right-radius: 6px; }
 table.dataTable tfoot {  display: none; }
 
 .dataTables_info, .dataTables_paginate { margin-top: 40px; }
+/*form styles*/
+
+.formwrap{
+    margin:0 auto;
+    border-radius: 5px;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.upload-form {
+    border:2px solid #fff;
+    padding:0 500px;
+}
+
+
+input.file {
+    height:40px;
+    position: relative;
+    text-align: right;
+    -moz-opacity:10 ;
+    filter:alpha(opacity: 10);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+    background-color:transparent;
+    opacity: 0;
+    color:transparent;
+    z-index: 2;
+
+}
+#upload-button{
+    background:#0088cc;
+    color:#fff;
+    border-radius:5px;
+    margin-top:20px;
+
+}
+/*cpconfigs*/
+.btn-create {
+    background-color: #f1f1f1;
+    margin-left: 100px;
+    margin-left: 161px;
+    padding: 5px 30px;
+    font-size: 20px;
+    color: #000;
+}
+
+
+
