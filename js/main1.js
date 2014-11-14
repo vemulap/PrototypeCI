@@ -5,149 +5,69 @@ $('.input-group.date').datepicker({
 
 
 function format ( d ) {
-    return 'Full name: '+d.first_name+' '+d.last_name+'<br>'+
-        'Salary: '+d.salary+'<br>'+
-        'The child row can contain any data you wish, including links, images, inner tables etc.';
+    return '<strong>File version: </strong>' + d.file_version + '<br>' + '<strong>File Size: </strong>' + d.file_size + '<br>' +
+        '<strong>Total Records: </strong>' + d.no_records + '<br>' + '<strong>Response: </strong>' + d.response + '<br>' + '<strong>Response Status: </strong>' + d.response_status + '<br>' +
+        '<strong>File Action: </strong>' + d.file_action;
 }
 
 
 
-var dataSet = [
-    {
-        "DT_RowId": "row_5",
-        "first_name": "Airi",
-        "last_name": "Satou",
-        "position": "Accountant",
-        "office": "Tokyo",
-        "start_date": "28th Nov 08",
-        "salary": "$162,700"
+$.ajax({
+    url: "http://10.65.231.39:8080/jadeservices/v1/audit/",
+    type: "GET",
+
+    contentType: 'application/json',
+    success: function(resultData) {
+
+        console.log(resultData);
+
     },
-    {
-        "DT_RowId": "row_25",
-        "first_name": "Angelica",
-        "last_name": "Ramos",
-        "position": "Chief Executive Officer (CEO)",
-        "office": "London",
-        "start_date": "9th Oct 09",
-        "salary": "$1,200,000"
+
+    error : function(jqXHR, textStatus, errorThrown) {
     },
-    {
-        "DT_RowId": "row_3",
-        "first_name": "Ashton",
-        "last_name": "Cox",
-        "position": "Junior Technical Author",
-        "office": "San Francisco",
-        "start_date": "12th Jan 09",
-        "salary": "$86,000"
-    },
-    {
-        "DT_RowId": "row_19",
-        "first_name": "Bradley",
-        "last_name": "Greer",
-        "position": "Software Engineer",
-        "office": "London",
-        "start_date": "13th Oct 12",
-        "salary": "$132,000"
-    },
-    {
-        "DT_RowId": "row_28",
-        "first_name": "Brenden",
-        "last_name": "Wagner",
-        "position": "Software Engineer",
-        "office": "San Francisco",
-        "start_date": "7th Jun 11",
-        "salary": "$206,850"
-    },
-    {
-        "DT_RowId": "row_6",
-        "first_name": "Brielle",
-        "last_name": "Williamson",
-        "position": "Integration Specialist",
-        "office": "New York",
-        "start_date": "2nd Dec 12",
-        "salary": "$372,000"
-    },
-    {
-        "DT_RowId": "row_43",
-        "first_name": "Bruno",
-        "last_name": "Nash",
-        "position": "Software Engineer",
-        "office": "London",
-        "start_date": "3rd May 11",
-        "salary": "$163,500"
-    },
-    {
-        "DT_RowId": "row_23",
-        "first_name": "Caesar",
-        "last_name": "Vance",
-        "position": "Pre-Sales Support",
-        "office": "New York",
-        "start_date": "12th Dec 11",
-        "salary": "$106,450"
-    },
-    {
-        "DT_RowId": "row_51",
-        "first_name": "Cara",
-        "last_name": "Stevens",
-        "position": "Sales Assistant",
-        "office": "New York",
-        "start_date": "6th Dec 11",
-        "salary": "$145,600"
-    },
-    {
-        "DT_RowId": "row_4",
-        "first_name": "Cedric",
-        "last_name": "Kelly",
-        "position": "Senior Javascript Developer",
-        "office": "Edinburgh",
-        "start_date": "29th Mar 12",
-        "salary": "$433,060"
-    },
-    {
-        "DT_RowId": "row_91",
-        "first_name": "Cedric",
-        "last_name": "Kelly",
-        "position": "Senior Javascript Developer",
-        "office": "Edinburgh",
-        "start_date": "29th Mar 12",
-        "salary": "$433,060"
-    },{
-        "DT_RowId": "row_101",
-        "first_name": "Cedric",
-        "last_name": "Kelly",
-        "position": "Senior Javascript Developer",
-        "office": "Edinburgh",
-        "start_date": "29th Mar 12",
-        "salary": "$433,060"
-    },{
-        "DT_RowId": "row_102",
-        "first_name": "Cedric",
-        "last_name": "Kelly",
-        "position": "Senior Javascript Developer",
-        "office": "Edinburgh",
-        "start_date": "29th Mar 12",
-        "salary": "$433,060"
-    },{
-        "DT_RowId": "row_103",
-        "first_name": "Cedric",
-        "last_name": "Kelly",
-        "position": "Senior Javascript Developer",
-        "office": "Edinburgh",
-        "start_date": "29th Mar 12",
-        "salary": "$433,060"
-    },{
-        "DT_RowId": "row_104",
-        "first_name": "Cedric",
-        "last_name": "Kelly",
-        "position": "Senior Javascript Developer",
-        "office": "Edinburgh",
-        "start_date": "29th Mar 12",
-        "salary": "$433,060"
-    },
-];
+
+    timeout: 120000
+});
+
+
+
+
+
+
+
+
 
 $(document).ready(function() {
-    //  $('#demo').html( '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"></table>' );
+  //  $('#demo').html( '<table cellpadding="0" cellspacing="0" border="0" class="display" id="example"></table>' );
+
+
+    //var url = 'http://10.65.231.39:8080/jadeservices/v1/audit/';
+    //
+    //$.ajax({
+    //    type: 'GET',
+    //    url: url,
+    //    contentType: "application/json",
+    //    dataType: 'jsonp',
+    //    success: function(json) {
+    //        console.log('jg');
+    //    },
+    //    error: function(e) {
+    //        console.log(e.message);
+    //    }
+    //});
+
+
+
+
+
+
+
+
+
+    var dataSet = [];
+
+
+
 
     var dt = $('#example').DataTable( {
         "data": dataSet,
@@ -158,10 +78,11 @@ $(document).ready(function() {
                 "data":           null,
                 "defaultContent": ""
             },
-            { "data": "first_name" },
+            { "data": "provider_name" },
             { "data": "file_name" },
-            { "data": "position" },
-            { "data": "office" }
+            { "data": "start_date" },
+            { "data": "status" },
+            {"data": "file_path"}
         ],
         "order": [[1, 'asc']]
     } );

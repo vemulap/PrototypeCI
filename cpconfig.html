@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -55,12 +56,12 @@
       <form class="form-horizontal custom-search" role="form" action="" id="form-config" >
 
   <!--Provider ID-->
-        <div class="form-group">
-          <label for="" class="col-sm-2 control-label">Provider ID</label>
-          <div class="col-xs-3">
-            <input type="text" name="cpID" readonly/>
-          </div>
-        </div>
+        <!--<div class="form-group">-->
+          <!--<label for="" class="col-sm-2 control-label">Provider ID</label>-->
+          <!--<div class="col-xs-3">-->
+            <!--<input type="text" name="cpID" readonly/>-->
+          <!--</div>-->
+        <!--</div>-->
   <!--End Provider ID-->
 
   <!--Provider Name-->
@@ -83,13 +84,16 @@
             </select>
           </div>
         </div>
+  <!--end Feed Format-->
+
+  <!--adapter-->
         <div class="form-group">
           <label for="" class="col-sm-2 control-label">Adapter</label>
           <div class="col-xs-3">
             <input type="text" name="adapter"  placeholder="Enter Adapter" required/>
           </div>
         </div>
-   <!--end Feed Format-->
+  <!--adapter-->
 
   <!--data pipeline-->
         <div class="form-group">
@@ -97,423 +101,394 @@
           <div class="col-xs-6">
             <select class="form-control data-destination" id="dataDestination">
               <option>Select</option>
-              <option id="1">acCatalogDestination</option>
-              <option id="2">acFeatureDestination</option>
-              <option id="3">mongoDBDestination</option>
-              <option id="4">hadoopClusterDestination</option>
-              <option id="5">dataFileDestination</option>
+              <!--<option id="1">acCatalogDestination</option>-->
+              <!--<option id="2">acFeatureDestination</option>-->
+              <!--<option id="3">mongoDBDestination</option>-->
+              <!--<option id="4">hadoopClusterDestination</option>-->
+              <!--<option id="5">dataFileDestination</option>-->
               <option id="6">webServiceDestination</option>
               <option id="7">webServiceKafkaDestination</option>
             </select>
           </div>
         </div>
-   <!--end data pipeline-->
+   <!--end data pipeline--
 
   <!--acCatalogDestination-->
-        <div id="option1">
+        <!--<div id="option1">-->
 
-             <div class="form-group">
-              <label for="" class="col-sm-2 control-label">Port</label>
-              <div class="col-xs-3">
-              <input type="text"  name="port" id="port" placeholder="Enter Port">
-            </div>
-            </div>
+             <!--<div class="form-group">-->
+              <!--<label for="" class="col-sm-2 control-label">Port</label>-->
+              <!--<div class="col-xs-3">-->
+              <!--<input type="text"  name="port" id="port" placeholder="Enter Port">-->
+            <!--</div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!--db: "cs353"-->
-              <label for="" class="col-sm-2 control-label">DB</label>
-              <div class="col-xs-3">
-              <input type="text" name="db" id="db">
-            </div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;db: "cs353"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">DB</label>-->
+              <!--<div class="col-xs-3">-->
+              <!--<input type="text" name="db" id="db">-->
+            <!--</div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!--status: "true"-->
-              <label for="" class="col-sm-2 control-label">Status</label>
-              <div class="col-xs-3">
-              <select class="form-control" id="status">
-                <option>Select</option>
-                <option value="">True</option>
-                <option value="">False</option>
-              </select>
-              </div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;status: "true"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">Status</label>-->
+              <!--<div class="col-xs-3">-->
+              <!--<select class="form-control" id="status">-->
+                <!--<option>Select</option>-->
+                <!--<option value="">True</option>-->
+                <!--<option value="">False</option>-->
+              <!--</select>-->
+              <!--</div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!--api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"-->
-              <label for="" class="col-sm-2 control-label">api</label>
-              <div class="col-xs-3"><input type="text" name="api" id="api"></div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">api</label>-->
+              <!--<div class="col-xs-3"><input type="text" name="api" id="api"></div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!-- server: "external-awsca-catalog-service.prod.aws.adchemy.net""-->
-              <label for="" class="col-sm-2 control-label">server</label>
-              <div class="col-xs-3"><input type="text" name="server" id="server"></div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash; server: "external-awsca-catalog-service.prod.aws.adchemy.net""&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">server</label>-->
+              <!--<div class="col-xs-3"><input type="text" name="server" id="server"></div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!--   collection: "productDoc"-->
-              <label for="" class="col-sm-2 control-label">collection</label>
-              <div class="col-xs-3"><input type="text" name="collection" id="collection">
-              </div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;   collection: "productDoc"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">collection</label>-->
+              <!--<div class="col-xs-3"><input type="text" name="collection" id="collection">-->
+              <!--</div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!--tagMapping: "{ "productId" : "ITEM_NBR"}"-->
-              <label for="" class="col-sm-2 control-label">Product ID</label>
-              <div class="col-xs-3"><input type="text" name="item-no" id="item-num"></div>
-            </div>
-          </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;tagMapping: "{ "productId" : "ITEM_NBR"}"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">Product ID</label>-->
+              <!--<div class="col-xs-3"><input type="text" name="item-no" id="item-num"></div>-->
+            <!--</div>-->
+          <!--</div>-->
 
   <!--end acCatalogDestination-->
 
         <!--acFeatureDestination-->
-       <div id="option2">
+       <!--<div id="option2">-->
 
 
-            <!--port: "27017"-->
-            <div class="form-group">
-              <label for="" class="col-sm-2 control-label">Port</label>
-              <div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">
-            </div></div>
+            <!--&lt;!&ndash;port: "27017"&ndash;&gt;-->
+            <!--<div class="form-group">-->
+              <!--<label for="" class="col-sm-2 control-label">Port</label>-->
+              <!--<div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">-->
+            <!--</div></div>-->
 
-            <div class="form-group">
-              <!--db: "cs353"-->
-              <label for="" class="col-sm-2 control-label">DB</label>
-              <div class="col-xs-3"><input type="text" name="db" id="db"></div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;db: "cs353"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">DB</label>-->
+              <!--<div class="col-xs-3"><input type="text" name="db" id="db"></div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!--status: "true"-->
-              <label for="" class="col-sm-2 control-label">Status</label>
-              <div class="col-xs-3"><select class="form-control" id="status">
-                <option>Select</option>
-                <option value="">True</option>
-                <option value="">False</option>
-              </select></div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;status: "true"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">Status</label>-->
+              <!--<div class="col-xs-3"><select class="form-control" id="status">-->
+                <!--<option>Select</option>-->
+                <!--<option value="">True</option>-->
+                <!--<option value="">False</option>-->
+              <!--</select></div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!--api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"-->
-              <label for="" class="col-sm-2 control-label">api</label>
-              <div class="col-xs-3"> <input type="text" name="api" id="api"></div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">api</label>-->
+              <!--<div class="col-xs-3"> <input type="text" name="api" id="api"></div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!-- server: "external-awsca-catalog-service.prod.aws.adchemy.net""-->
-              <label for="" class="col-sm-2 control-label">server</label>
-              <div class="col-xs-3"><input type="text" name="server" id="server"></div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash; server: "external-awsca-catalog-service.prod.aws.adchemy.net""&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">server</label>-->
+              <!--<div class="col-xs-3"><input type="text" name="server" id="server"></div>-->
+            <!--</div>-->
 
-            <div class="form-group">
-              <!--   collection: "productDoc"-->
-              <label for="" class="col-sm-2 control-label">collection</label>
-              <div class="col-xs-3"> <input type="text" name="collection" id="collection"></div>
-            </div>
+            <!--<div class="form-group">-->
+              <!--&lt;!&ndash;   collection: "productDoc"&ndash;&gt;-->
+              <!--<label for="" class="col-sm-2 control-label">collection</label>-->
+              <!--<div class="col-xs-3"> <input type="text" name="collection" id="collection"></div>-->
+            <!--</div>-->
 
 
 
-        </div>
+        <!--</div>-->
         <!--end acFeatureDestination-->
 
   <!--mongoDBDestination-->
-  <div id="option3">
+  <!--<div id="option3">-->
 
 
-      <!--port: "27017"-->
-      <div class="form-group">
-        <label for="" class="col-sm-2 control-label">Port</label>
-        <div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">
-      </div></div>
+      <!--&lt;!&ndash;port: "27017"&ndash;&gt;-->
+      <!--<div class="form-group">-->
+        <!--<label for="" class="col-sm-2 control-label">Port</label>-->
+        <!--<div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">-->
+      <!--</div></div>-->
 
-      <div class="form-group">
-        <!--db: "cs353"-->
-        <label for="" class="col-sm-2 control-label">DB</label>
-        <div class="col-xs-3"> <input type="text" name="db" id="db"></div>
-      </div>
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;db: "cs353"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">DB</label>-->
+        <!--<div class="col-xs-3"> <input type="text" name="db" id="db"></div>-->
+      <!--</div>-->
 
-      <div class="form-group">
-        <!--status: "true"-->
-        <label for="" class="col-sm-2 control-label">Status</label>
-        <div class="col-xs-3"><select class="form-control" id="status">
-          <option>Select</option>
-          <option value="">True</option>
-          <option value="">False</option>
-        </select></div>
-      </div>
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;status: "true"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">Status</label>-->
+        <!--<div class="col-xs-3"><select class="form-control" id="status">-->
+          <!--<option>Select</option>-->
+          <!--<option value="">True</option>-->
+          <!--<option value="">False</option>-->
+        <!--</select></div>-->
+      <!--</div>-->
 
-      <div class="form-group">
-        <!--api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"-->
-        <label for="" class="col-sm-2 control-label">api</label>
-        <div class="col-xs-3"><input type="text" name="api" id="api"></div>
-      </div>
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">api</label>-->
+        <!--<div class="col-xs-3"><input type="text" name="api" id="api"></div>-->
+      <!--</div>-->
 
-      <div class="form-group">
-        <!-- server: "external-awsca-catalog-service.prod.aws.adchemy.net""-->
-        <label for="" class="col-sm-2 control-label">server</label>
-        <div class="col-xs-3"><input type="text" name="server" id="server"></div>
-      </div>
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash; server: "external-awsca-catalog-service.prod.aws.adchemy.net""&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">server</label>-->
+        <!--<div class="col-xs-3"><input type="text" name="server" id="server"></div>-->
+      <!--</div>-->
 
-      <div class="form-group">
-        <!--   collection: "productDoc"-->
-        <label for="" class="col-sm-2 control-label">collection</label>
-        <div class="col-xs-3"> <input type="text" name="collection" id="collection"></div>
-      </div>
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;   collection: "productDoc"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">collection</label>-->
+        <!--<div class="col-xs-3"> <input type="text" name="collection" id="collection"></div>-->
+      <!--</div>-->
 
 
-  </div>
+  <!--</div>-->
   <!--end mongoDBDestination-->
 
   <!--hadoopClusterDestination-->
-  <div  id="option4">
+  <!--<div  id="option4">-->
 
 
 
-      <div class="form-group">
-        <!--status: "true"-->
-        <label for="" class="col-sm-2 control-label">Status</label>
-        <div class="col-xs-3"> <select class="form-control" id="status">
-          <option>Select</option>
-          <option value="">True</option>
-          <option value="">False</option>
-        </select>
-      </div></div>
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;status: "true"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">Status</label>-->
+        <!--<div class="col-xs-3"> <select class="form-control" id="status">-->
+          <!--<option>Select</option>-->
+          <!--<option value="">True</option>-->
+          <!--<option value="">False</option>-->
+        <!--</select>-->
+      <!--</div></div>-->
 
 
 
 
 
-  </div>
+  <!--</div>-->
   <!--end hadoopClusterDestination-->
 
   <!--dataFileDestination-->
-  <div id="option5">
+  <!--<div id="option5">-->
 
 
-      <!--port: "27017"-->
-      <div class="form-group">
-        <label for="" class="col-sm-2 control-label">Port</label>
-        <div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">
-      </div></div>
-
-      <div class="form-group">
-        <!--db: "cs353"-->
-        <label for="" class="col-sm-2 control-label">DB</label>
-        <div class="col-xs-3"> <input type="text" name="db" id="db"></div>
-      </div>
-
-      <div class="form-group">
-        <!--status: "true"-->
-        <label for="" class="col-sm-2 control-label">Status</label>
-        <div class="col-xs-3"><select class="form-control" id="status">
-          <option>Select</option>
-          <option value="">True</option>
-          <option value="">False</option>
-        </select></div>
-      </div>
-
-      <div class="form-group">
-        <!--api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"-->
-        <label for="" class="col-sm-2 control-label">api</label>
-        <div class="col-xs-3"> <input type="text" name="api" id="api"></div>
-      </div>
-
-      <div class="form-group">
-        <!-- server: "external-awsca-catalog-service.prod.aws.adchemy.net""-->
-        <label for="" class="col-sm-2 control-label">server</label>
-        <div class="col-xs-3"><input type="text" name="server" id="server"></div>
-      </div>
-
-      <div class="form-group">
-        <!--   collection: "productDoc"-->
-        <label for="" class="col-sm-2 control-label">collection</label>
-        <div class="col-xs-3"><input type="text" name="collection" id="collection"></div>
-      </div>
-
-      <div class="form-group">
-        <!--tagMapping: "{ "productId" : "ITEM_NBR"}"-->
-        <label for="" class="col-sm-2 control-label">Product ID</label>
-        <div class="col-xs-3"><input type="text" name="item-no" id="item-num"></div>
-      </div>
-
+      <!--&lt;!&ndash;port: "27017"&ndash;&gt;-->
+      <!--<div class="form-group">-->
+        <!--<label for="" class="col-sm-2 control-label">Port</label>-->
+        <!--<div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">-->
+      <!--</div></div>-->
 
       <!--<div class="form-group">-->
-      <!--&lt;!&ndash;  path: "/mnt/wm/wmDB2Dump/data/"&ndash;&gt;-->
-      <!--<label for="" class="col-sm-2 control-label">collection</label>-->
-      <!--<input type="text" name="path" id="path">-->
+        <!--&lt;!&ndash;db: "cs353"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">DB</label>-->
+        <!--<div class="col-xs-3"> <input type="text" name="db" id="db"></div>-->
       <!--</div>-->
 
-  </div>
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;status: "true"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">Status</label>-->
+        <!--<div class="col-xs-3"><select class="form-control" id="status">-->
+          <!--<option>Select</option>-->
+          <!--<option value="">True</option>-->
+          <!--<option value="">False</option>-->
+        <!--</select></div>-->
+      <!--</div>-->
+
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">api</label>-->
+        <!--<div class="col-xs-3"> <input type="text" name="api" id="api"></div>-->
+      <!--</div>-->
+
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash; server: "external-awsca-catalog-service.prod.aws.adchemy.net""&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">server</label>-->
+        <!--<div class="col-xs-3"><input type="text" name="server" id="server"></div>-->
+      <!--</div>-->
+
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;   collection: "productDoc"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">collection</label>-->
+        <!--<div class="col-xs-3"><input type="text" name="collection" id="collection"></div>-->
+      <!--</div>-->
+
+      <!--<div class="form-group">-->
+        <!--&lt;!&ndash;tagMapping: "{ "productId" : "ITEM_NBR"}"&ndash;&gt;-->
+        <!--<label for="" class="col-sm-2 control-label">Product ID</label>-->
+        <!--<div class="col-xs-3"><input type="text" name="item-no" id="item-num"></div>-->
+      <!--</div>-->
+
+
+      <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+      <!--&lt;!&ndash;&lt;!&ndash;  path: "/mnt/wm/wmDB2Dump/data/"&ndash;&gt;&ndash;&gt;-->
+      <!--&lt;!&ndash;<label for="" class="col-sm-2 control-label">collection</label>&ndash;&gt;-->
+      <!--&lt;!&ndash;<input type="text" name="path" id="path">&ndash;&gt;-->
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+  <!--</div>-->
   <!--end dataFileDestination-->
-    <!--acFeatureDestination-->
-    <div id="option6">
 
-
-        <!--port: "27017"-->
-        <div class="form-group">
-          <label for="" class="col-sm-2 control-label">Port</label>
-          <div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">
-        </div></div>
-
-        <div class="form-group">
-          <!--db: "cs353"-->
-          <label for="" class="col-sm-2 control-label">DB</label>
-          <div class="col-xs-3"><input type="text" name="db" id="db"></div>
-        </div>
-
-        <div class="form-group">
-          <!--status: "true"-->
-          <label for="" class="col-sm-2 control-label">Status</label>
-          <div class="col-xs-3"> <select class="form-control" id="status">
-            <option>Select</option>
-            <option value="">True</option>
-            <option value="">False</option>
-          </select></div>
-        </div>
-
-        <div class="form-group">
-          <!--api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"-->
-          <label for="" class="col-sm-2 control-label">api</label>
-          <div class="col-xs-3"> <input type="text" name="api" id="api"></div>
-        </div>
-
-        <div class="form-group">
-          <!-- server: "external-awsca-catalog-service.prod.aws.adchemy.net""-->
-          <label for="" class="col-sm-2 control-label">server</label>
-          <div class="col-xs-3"> <input type="text" name="server" id="server"></div>
-        </div>
-
-        <div class="form-group">
-          <!--   collection: "productDoc"-->
-          <label for="" class="col-sm-2 control-label">collection</label>
-          <div class="col-xs-3"><input type="text" name="collection" id="collection"></div>
-        </div>
-
-
-
-    </div>
-    <!--end acFeatureDestination-->
   <!--webServiceDestination-->
+  <div  id="option6">
+      <!--status: "true"-->
+      <div class="form-group">
+
+          <label for="" class="col-sm-2 control-label">Status</label>
+          <div class="col-xs-3">
+              <select class="form-control form-status" id="status" name="status">
+                  <option>Select</option>
+                  <option value="">True</option>
+                  <option value="">False</option>
+              </select>
+          </div>
+      </div>
+      <!-- protocol -->
+      <div class="form-group">
+
+          <label for="" class="col-sm-2 control-label">Protocol</label>
+          <div class="col-xs-3">
+              <input type="text" name="protocol" id="protocol">
+          </div>
+      </div>
+
+      <!--host -->
+      <div class="form-group">
+
+          <label for="" class="col-sm-2 control-label">Host</label>
+          <div class="col-xs-3">
+              <input type="text" name="host" id="host">
+          </div>
+      </div>
+
+      <!--path -->
+      <div class="form-group">
+
+          <label for="" class="col-sm-2 control-label">Path</label>
+          <div class="col-xs-3">
+              <input type="text" name="path" id="path">
+          </div>
+      </div>
+
+      <!--resource -->
+      <div class="form-group">
+
+          <label for="" class="col-sm-2 control-label">Resource</label>
+          <div class="col-xs-3">
+              <input type="text" name="resource" id="resource">
+          </div>
+      </div>
+
+      <!-- api urlparams -->
+      <div class="form-group">
+
+          <label for="" class="col-sm-2 control-label">apiUrlParams</label>
+          <div class="col-xs-3">
+              <input type="text" name="apiUrlParams" id="apiUrlParams">
+          </div>
+      </div>
+
+
+
+  </div>
+  <!--end webServiceDestination
+
+    <!--webServiceKafkaDestination-->
   <div  id="option7">
 
-
-      <!--port: "27017"-->
-      <!--<div class="form-group">-->
-      <!--<label for="" class="col-sm-2 control-label">Port</label>-->
-      <!--<input type="text"  name="port" id="port" placeholder="Enter Port">-->
-      <!--</div>-->
-
-      <!--<div class="form-group">-->
-      <!--&lt;!&ndash;db: "cs353"&ndash;&gt;-->
-      <!--<label for="" class="col-sm-2 control-label">DB</label>-->
-      <!--<input type="text" name="db" id="db">-->
-      <!--</div>-->
-
+      <!--status: "true"-->
       <div class="form-group">
-        <!--status: "true"-->
-        <label for="" class="col-sm-2 control-label">Status</label>
-        <div class="col-xs-3"><select class="form-control" id="status">
-          <option>Select</option>
-          <option value="">True</option>
-          <option value="">False</option>
-        </select></div>
+
+          <label for="" class="col-sm-2 control-label">Status</label>
+          <div class="col-xs-3">
+              <select class="form-control" id="status" name="status">
+                  <option>Select</option>
+                  <option value="">True</option>
+                  <option value="">False</option>
+              </select>
+          </div>
+      </div>
+      <!--host -->
+      <div class="form-group">
+
+          <label for="" class="col-sm-2 control-label">Host</label>
+          <div class="col-xs-3">
+              <input type="text" name="host" id="host">
+          </div>
       </div>
 
+      <!-- port: "9092""-->
       <div class="form-group">
-        <!--apiUrlParams: "{ "topic" : "pipeline1"}"-->
-        <label for="" class="col-sm-2 control-label">topic</label>
-        <div class="col-xs-3"><input type="text" name="pipeline1" id="pipeline1"></div>
+
+          <label for="" class="col-sm-2 control-label">Port</label>
+          <div class="col-xs-3">
+              <input type="text"  name="port" id="port" placeholder="Enter Port">
+          </div>
       </div>
 
-
+      <!-- destination type -->
       <div class="form-group">
-        <!--api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"-->
-        <label for="" class="col-sm-2 control-label">api</label>
-        <div class="col-xs-3"> <input type="text" name="api" id="api"></div>
+
+          <label for="" class="col-sm-2 control-label">Destination Type</label>
+          <div class="col-xs-3">
+              <input type="text"  name="destinationType" id="destinationType" placeholder="Enter destinationType">
+          </div>
       </div>
 
-      <!--<div class="form-group">-->
-      <!--&lt;!&ndash; server: "external-awsca-catalog-service.prod.aws.adchemy.net""&ndash;&gt;-->
-      <!--<label for="" class="col-sm-2 control-label">server</label>-->
-      <!--<input type="text" name="server" id="server">-->
-      <!--</div>-->
-
-      <!--<div class="form-group">-->
-      <!--&lt;!&ndash;   collection: "productDoc"&ndash;&gt;-->
-      <!--<label for="" class="col-sm-2 control-label">collection</label>-->
-      <!--<input type="text" name="collection" id="collection">-->
-      <!--</div>-->
-
-
-
-  </div>
-  <!--end webServiceDestination-->
-
-  <!--webServiceKafkaDestination-->
-  <div  id="option8">
-
-
-
-
+      <!-- destination Name -->
       <div class="form-group">
-        <!--topic: "store"-->
-        <label for="" class="col-sm-2 control-label">topic</label>
-        <div class="col-xs-3"><input type="text"  name="store" id="store" placeholder="select topic">
-      </div></div>
 
-      <div class="form-group">
-        <!-- port: "9092""-->
-        <label for="" class="col-sm-2 control-label">Port</label>
-        <div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">
-      </div></div>
-
-      <!--<div class="form-group">-->
-      <!--&lt;!&ndash;db: "cs353"&ndash;&gt;-->
-      <!--<label for="" class="col-sm-2 control-label">DB</label>-->
-      <!--<input type="text" name="db" id="db">-->
-      <!--</div>-->
-
-
-      <div class="form-group">
-        <!--ack_timeout: "2000.0"-->
-        <label for="" class="col-sm-2 control-label">ack_timeout</label>
-        <div class="col-xs-3"><input type="text"  name="port" id="port" placeholder="Enter Port">
-      </div></div>
-
-      <div class="form-group">
-        <!--status: "true"-->
-        <label for="" class="col-sm-2 control-label">Status</label>
-        <div class="col-xs-3"><select class="form-control" id="status">
-          <option>Select</option>
-          <option value="">True</option>
-          <option value="">False</option>
-        </select></div>
-      </div>
-
-      <!--<div class="form-group">-->
-      <!--<!--api: "http://awsca-catalog-service.prod.aws.adchemy.net:8080/353/v2.0/"-->
-      <!--<label for="" class="col-sm-2 control-label">api</label>-->
-      <!--<input type="text" name="api" id="api">-->
-      <!--</div>-->
-
-      <div class="form-group">
-        <!--async: "false"-->
-        <label for="" class="col-sm-2 control-label">async</label>
-        <div class="col-xs-3"><select class="form-control" id="async">
-          <option>Select</option>
-          <option value="">True</option>
-          <option value="">False</option>
-        </select></div>
-      </div>
-
-      <div class="form-group">
-        <!--url: "pg-idml01.sv.walmartlabs.com"-->
-        <label for="" class="col-sm-2 control-label">url</label>
-        <div class="col-xs-3"><input type="url" name="url" id="url"/></div>
+          <label for="" class="col-sm-2 control-label">Destination Name</label>
+          <div class="col-xs-3">
+              <input type="text"  name="destinationName" id="destinationName" placeholder="Enter destinationName">
+          </div>
       </div>
 
 
+      <!--ack_timeout: "2000.0"-->
+      <div class="form-group">
 
+          <label for="" class="col-sm-2 control-label">ack_timeout</label>
+          <div class="col-xs-3">
+              <input type="text"  name="ack_timeout" id="ack_timeout" placeholder="Enter ack_timeout">
+          </div>
+
+      </div>
+
+
+      <div class="form-group">
+          <!--async: "false"-->
+          <label for="" class="col-sm-2 control-label">async</label>
+          <div class="col-xs-3">
+            <select class="form-control async" id="async">
+              <option>Select</option>
+              <option value="">True</option>
+              <option value="">False</option>
+            </select>
+          </div>
+
+      </div>
 
 
   </div>
@@ -551,9 +526,7 @@
 
 
   </div><!--/row-->
-  <!--<div class="">-->
-    <!--<button type="button" class="btn btn-xs btn-create">CREATE</button>-->
-  <!--</div>-->
+
 
   <hr>
 
